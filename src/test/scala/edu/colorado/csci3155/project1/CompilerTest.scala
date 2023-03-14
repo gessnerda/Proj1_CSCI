@@ -62,6 +62,7 @@ class CompilerTest extends FunSuite {
         val lst = StackMachineCompiler.compileToStackMachineCode(e1)
         printInstructionList(lst, "LetBinding+ Ident Test 2")
         assert(lst == List(PushNumI(1.5), LoadEnv("x"), StoreEnv("x"), StoreEnv("x"), AddI, PopEnv))
+        
     }
 
     test("LetBinding + Ident Test 3") {
@@ -121,6 +122,8 @@ class CompilerTest extends FunSuite {
         val innerLet = Llet ("x") ~ 5.0 in x * 3 
         val e1 = Llet ("x") ~ 1.0 in (Llet("y") ~ innerLet in x - y )
         val lst = StackMachineCompiler.compileToStackMachineCode(e1)
+
+
 
         printInstructionList(lst, "LetBinding + Ident Test 5")
         val expected = List(

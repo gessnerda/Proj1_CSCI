@@ -1,7 +1,5 @@
 package edu.colorado.csci3155.project1
 
-import StackMachineEmulator._
-
 object StackMachineCompiler {
 
     def compileToStackMachineCode(e: Expr): List[StackMachineInstruction] = {
@@ -14,9 +12,11 @@ object StackMachineCompiler {
             case Ident(id) => List(LoadEnv(id))
             case Let(id, e1, e2) =>
                 compileToStackMachineCode(e1) ++
-                    List(LoadEnv(id), StoreEnv(id)) ++
+                    List(StoreEnv(id)) ++
                     compileToStackMachineCode(e2) ++
                     List(PopEnv)
+
+            
             case IfThenElse(cond, thenPart, elsePart) =>
                 val thenInstructions = compileToStackMachineCode(thenPart)
                 val elseInstructions = compileToStackMachineCode(elsePart)
@@ -30,14 +30,17 @@ object StackMachineCompiler {
             case And(a, b) =>
                 val aInstructions = compileToStackMachineCode(a)
                 val bInstructions = compileToStackMachineCode(b)
-                aInstructions ++ List(CSkipI(bInstructions.length + 1)) ++ bInstructions ++ List(PushBoolI(false))
+                aInstructions ++ List(CSkipI(bInstructions.length + 1)) ++ bInstructions ++ List(GeqI, PushNumI(1.0), GeqI)
             case Or(a, b) =>
                 val aInstructions = compileToStackMachineCode(a)
                 val bInstructions = compileToStackMachineCode(b)
-                aInstructions ++ List(CSkipI(2), PushBoolI(true), SkipI(bInstructions.length)) ++ bInstructions
+                aInstructions ++ List(CSkipI(aInstructions.length + 1)) ++ bInstructions ++ List(AddI, GeqI, NotI)
             case Not(a) => compileToStackMachineCode(a) ++ List(NotI)
+            case Exp(a) => compileToStackMachineCode(a) ++ List(ExpI)
+            case Log(a) => compileToStackMachineCode(a) ++ List(LogI)
+            case Sine(a) => compileToStackMachineCode(a) ++ List(SinI)
+            case Cosine(a) => compileToStackMachineCode(a) ++ List(CosI)
             case _ => throw new UnsupportedOperationException(s"Unsupported expression: $e")
         }
     }
 }
-

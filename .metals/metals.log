@@ -817,3 +817,47 @@ Caused by: java.lang.InterruptedException
 2023.03.14 13:24:31 INFO  time: compiled project1_student in 2.37s
 2023.03.14 13:24:51 INFO  compiling project1_student (1 scala source)
 2023.03.14 13:24:54 INFO  time: compiled project1_student in 2.71s
+2023.03.14 13:37:05 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:37:11 INFO  time: compiled project1_student in 6.37s
+2023.03.14 13:37:24 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:37:24 INFO  time: compiled project1_student in 0.52s
+2023.03.14 13:39:41 INFO  file:///Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI%203155/Projects/project1_student/src/main/scala/edu/colorado/csci3155/project1/StackMachineCompiler.scala:33:98: stale bloop error: not found: value AndI
+                aInstructions ++ List(CSkipI(bInstructions.length + 2)) ++ bInstructions ++ List(AndI)
+                                                                                                 ^^^^
+2023.03.14 13:39:41 INFO  file:///Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI%203155/Projects/project1_student/src/main/scala/edu/colorado/csci3155/project1/StackMachineCompiler.scala:37:73: stale bloop error: not found: value OrI
+                aInstructions ++ List(CSkipI(aInstructions.length + 1), OrI) ++ bInstructions
+                                                                        ^^^
+2023.03.14 13:39:46 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:39:46 INFO  time: compiled project1_student in 0.49s
+2023.03.14 13:40:58 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:41:00 INFO  time: compiled project1_student in 2.03s
+2023.03.14 13:43:40 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:43:43 INFO  time: compiled project1_student in 2.42s
+2023.03.14 13:43:47 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:43:49 INFO  time: compiled project1_student in 1.84s
+2023.03.14 13:48:26 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:48:29 INFO  time: compiled project1_student in 2.37s
+2023.03.14 13:49:43 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:49:43 INFO  time: compiled project1_student in 0.82s
+2023.03.14 13:51:42 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:51:44 INFO  time: compiled project1_student in 2.18s
+2023.03.14 13:56:19 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:56:19 INFO  time: compiled project1_student in 0.85s
+2023.03.14 13:57:28 INFO  compiling project1_student (1 scala source)
+2023.03.14 13:57:30 INFO  time: compiled project1_student in 2.08s
+Exception in thread "pool-3-thread-6" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.03.14 14:02:28 INFO  compiling project1_student-test (1 scala source)
+2023.03.14 14:02:32 INFO  time: compiled project1_student-test in 3.98s
+2023.03.14 14:04:14 INFO  compiling project1_student (1 scala source)
+2023.03.14 14:04:16 INFO  time: compiled project1_student in 2.24s
+2023.03.14 14:04:56 INFO  compiling project1_student (1 scala source)
+2023.03.14 14:04:58 INFO  time: compiled project1_student in 2.48s

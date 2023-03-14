@@ -29,6 +29,7 @@ case class Not(e: Expr) extends Expr
 case class IfThenElse(cond: Expr, tExpr: Expr, elseExpr: Expr) extends Expr 
 case class Let(ident: String, e1: Expr, e2: Expr) extends Expr
 
+
 /* -- ignore code below -- it is meant for the simple test case writing DSL --*/
 object Conversions { 
     implicit def to_expr(s: String) = Ident(s)
