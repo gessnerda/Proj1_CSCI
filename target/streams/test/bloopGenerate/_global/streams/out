@@ -1,0 +1,4 @@
+[debug] [project1_student-test] Classpath dependencies List()
+[debug] [project1_student-test] Dependencies from configurations List(project1_student)
+[debug] Bloop wrote the configuration of project 'project1_student-test' to '/Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI 3155/Projects/project1_student/.bloop/project1_student-test.json'
+[success] Generated .bloop/project1_student-test.json
