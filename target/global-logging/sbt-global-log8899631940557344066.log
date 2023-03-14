@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(97f6cc25-fe28-49a3-ad9e-c7f18f0b9d55), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(cfc2b675-0042-45db-a3a8-cd20dac637fa), Some(CommandSource(console0)))[0m
 [0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI 3155/Projects/project1_student/target/scala-2.12/classes ...[0m
@@ -32,110 +32,106 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m  + MultI [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  + SubI [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- simple expression 4[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + Your result for CompilerTest: simple expression 4 [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(1.5) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(2.4) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(2.5) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(2.5) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + MultI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + SubI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + ExpI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(2.5) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + ExpI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + LogI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- simple expression 4 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.UnsupportedOperationException: Unsupported expression: Log(Plus(Exp(Minus(Plus(Const(1.5),Const(2.4)),Mult(Const(2.5),Const(2.5)))),Exp(Plus(Const(1.0),Const(2.5)))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at edu.colorado.csci3155.project1.StackMachineCompiler$.compileToStackMachineCode(StackMachineCompiler.scala:39)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at edu.colorado.csci3155.project1.CompilerTest.$anonfun$new$4(CompilerTest.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- LetBinding + Ident Test 1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), LoadEnv(x), PopEnv) (CompilerTest.scala:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PopEnv) (CompilerTest.scala:56)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: LetBinding + Ident Test 1 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- LetBinding + Ident Test 2 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, LoadEnv(x), PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv) (CompilerTest.scala:64)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv) (CompilerTest.scala:64)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: LetBinding+ Ident Test 2 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.5) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- LetBinding + Ident Test 3 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv) (CompilerTest.scala:86)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, PopEnv, PopEnv) (CompilerTest.scala:86)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: Let Binding + Ident Test 3 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.5) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + MultI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- LetBinding + Ident Test 4 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(x), PopEnv, StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, LoadEnv(x), PopEnv) (CompilerTest.scala:109)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, PopEnv) (CompilerTest.scala:109)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: LetBinding + Ident Test 4 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(2.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- LetBinding + Ident Test 5 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), PushNumI(5.0), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, LoadEnv(x), PopEnv, StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv) (CompilerTest.scala:142)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, PopEnv, PopEnv) (CompilerTest.scala:142)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: LetBinding + Ident Test 5 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(3.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + MultI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + SubI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- If-then-else-test-1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv) (CompilerTest.scala:169)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv) (CompilerTest.scala:169)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Expression: Let(x,Const(25.0),IfThenElse(Geq(Ident(x),Const(25.0)),Plus(Ident(x),Const(25.5)),Const(43.0))) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: If-then-else-test-1 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(25.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(25.0) [0m[0m
@@ -146,18 +142,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(1) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(43.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- If-then-else-test-2 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv, LoadEnv(y), PopEnv) (CompilerTest.scala:201)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv) (CompilerTest.scala:201)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: if-then-else-test2 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(24.5) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(45.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + StoreEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(25.0) [0m[0m
@@ -168,13 +165,11 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  + AddI [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(1) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(43.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(x) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + LoadEnv(y) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PopEnv [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- test-and-simple-1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushNumI(0.0)) (CompilerTest.scala:219)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, PushBoolI(false)) (CompilerTest.scala:219)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: test-and-simple-1 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
@@ -184,11 +179,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(-4.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(1) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + PushBoolI(false) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- test-and-simple-2 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushNumI(0.0)) (CompilerTest.scala:237)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, PushBoolI(false)) (CompilerTest.scala:237)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: test-and-simple-2 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
@@ -198,11 +192,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + DivI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(1) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + PushBoolI(false) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- test-and-simple-3 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushNumI(0.0)) (CompilerTest.scala:256)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, PushBoolI(false)) (CompilerTest.scala:256)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: test-and-simple-3 [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
@@ -212,47 +205,44 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(-4.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(1) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  + PushBoolI(false) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test-or-simple-1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI) (CompilerTest.scala:274)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: test-or-simple-1 [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + CSkipI(2) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(3) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(-4.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test-or-not-1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI) (CompilerTest.scala:296)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + Your result for CompilerTest: test-or-not-1 [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(5.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + CSkipI(2) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(1.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + SkipI(5) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + DivI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + PushNumI(0.0) [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + GeqI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + NotI [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  + ------------------------------- [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 534 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test-or-simple-1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + Your result for CompilerTest: test-or-simple-1 [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(1.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(5.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GeqI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + CSkipI(2) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushBoolI(true) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + SkipI(3) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(5.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(-4.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GeqI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test-or-not-1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + Your result for CompilerTest: test-or-not-1 [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(5.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(1.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GeqI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + CSkipI(2) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushBoolI(true) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + SkipI(5) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + DivI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + PushNumI(0.0) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GeqI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + NotI [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + ------------------------------- [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 403 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 21[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 9, failed 12, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 12 TESTS FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 11, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 11 TESTS FAILED ***[0m[0m
 [0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
 [0m[[0m[31merror[0m] [0m[0m	edu.colorado.csci3155.project1.CompilerTest[0m
 [0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
-[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Mar 14, 2023, 1:01:05 PM[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Mar 14, 2023, 1:24:56 PM[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

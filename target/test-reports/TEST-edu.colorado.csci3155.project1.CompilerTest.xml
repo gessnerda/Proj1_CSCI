@@ -1,19 +1,78 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="econ1-129-214-dhcp.int.colorado.edu" name="edu.colorado.csci3155.project1.CompilerTest" tests="16" errors="0" failures="12" skipped="0" time="0.079" timestamp="2023-03-14T13:01:05">
+<testsuite hostname="econ1-129-214-dhcp.int.colorado.edu" name="edu.colorado.csci3155.project1.CompilerTest" tests="16" errors="0" failures="11" skipped="0" time="0.07" timestamp="2023-03-14T13:24:56">
           <properties>
       <property name="java.specification.version" value="19"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/1.8.2/libexec/bin/sbt-launch.jar"/><property name="jdk.debug" value="release"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2023-01-17"/><property name="java.home" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
 "/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="19.0.2"/><property name="user.name" value="devingessner"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/Users/devingessner/Library/Caches/JNA/temp/jna2877491022151515577.tmp"/><property name="java.vendor.version" value="Homebrew"/><property name="jna.loaded" value="true"/><property name="java.io.tmpdir" value="/var/folders/dc/1tphbqxx74q5nj8_xq4rkwxm0000gn/T/"/><property name="java.version" value="19.0.2"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/devingessner/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="stderr.encoding" value="UTF-8"/><property name="java.vendor" value="Homebrew"/><property name="scala.ext.dirs" value="/Users/devingessner/.sbt/1.0/java9-rt-ext-homebrew_19_0_2"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.class.path" value="/usr/local/Cellar/sbt/1.8.2/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Homebrew"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="America/Denver"/><property name="java.vm.specification.version" value="19"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="US"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/devingessner"/><property name="user.language" value="en"/><property name="sbt.script" value="/usr/local/Cellar/sbt/1.8.2/libexec/bin/sbt"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/dc/1tphbqxx74q5nj8_xq4rkwxm0000gn/T/.sbtc8ffbbc2/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/dc/1tphbqxx74q5nj8_xq4rkwxm0000gn/T/.sbtc8ffbbc2/swoval"/><property name="apple.awt.application.name" value="Boot"/><property name="jline.esc.timeout" value="0"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="stdout.encoding" value="UTF-8"/><property name="path.separator" value=":"/><property name="os.version" value="13.2.1"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="user.dir" value="/Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI 3155/Projects/project1_student"/><property name="os.arch" value="x86_64"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="19.0.2"/><property name="java.class.version" value="63.0"/>
     </properties>
-          <testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 1" time="0.023">
+          <testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 1" time="0.016">
                       
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 2" time="0.004">
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 2" time="0.001">
                       
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 3" time="0.001">
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 3" time="0.002">
                       
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 4" time="0.003">
-                      
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 1" time="0.027">
-                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), LoadEnv(x), PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="simple expression 4" time="0.009">
+                      <failure message="Unsupported expression: Log(Plus(Exp(Minus(Plus(Const(1.5),Const(2.4)),Mult(Const(2.5),Const(2.5)))),Exp(Plus(Const(1.0),Const(2.5)))))" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Unsupported expression: Log(Plus(Exp(Minus(Plus(Const(1.5),Const(2.4)),Mult(Const(2.5),Const(2.5)))),Exp(Plus(Const(1.0),Const(2.5)))))
+	at edu.colorado.csci3155.project1.StackMachineCompiler$.compileToStackMachineCode(StackMachineCompiler.scala:39)
+	at edu.colorado.csci3155.project1.CompilerTest.$anonfun$new$4(CompilerTest.scala:42)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+	at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:147)
+	at sbt.TestRunner.run(TestFramework.scala:162)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:330)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:290)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
+	at sbt.TestFunction.apply(TestFramework.scala:342)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)
+	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+	at sbt.Execute.work(Execute.scala:291)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</failure>
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 1" time="0.017">
+                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -78,8 +137,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 2" time="0.007">
-                      <failure message="List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, LoadEnv(x), PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, LoadEnv(x), PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 2" time="0.004">
+                      <failure message="List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), LoadEnv(x), AddI, PopEnv) did not equal List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), StoreEnv(x), AddI, PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -142,8 +201,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 3" time="0.002">
-                      <failure message="Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 3" time="0.001">
+                      <failure message="Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, PopEnv, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(x), StoreEnv(y), MultI, PopEnv, PopEnv), but got List(PushNumI(1.5), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), MultI, PopEnv, PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -209,7 +268,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
                     </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 4" time="0.001">
-                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(x), PopEnv, StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, LoadEnv(x), PopEnv, StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, LoadEnv(x), PopEnv)
+                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), PushNumI(2.0), AddI, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(1.0), AddI, PopEnv, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(2.0), AddI, PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -274,8 +333,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 5" time="0.003">
-                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), PushNumI(5.0), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, LoadEnv(x), PopEnv, StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), StoreEnv(x), PushNumI(5.0), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, LoadEnv(x), PopEnv, StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, LoadEnv(y), PopEnv, LoadEnv(x), PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="LetBinding + Ident Test 5" time="0.009">
+                      <failure message="Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, PopEnv, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), LoadEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(x), StoreEnv(y), SubI, PopEnv, PopEnv), but got List(PushNumI(1.0), LoadEnv(x), StoreEnv(x), PushNumI(5.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(3.0), MultI, PopEnv, LoadEnv(y), StoreEnv(y), LoadEnv(x), LoadEnv(y), SubI, PopEnv, PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -340,8 +399,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="If-then-else-test-1" time="0.004">
-                      <failure message="Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="If-then-else-test-1" time="0.003">
+                      <failure message="Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv), but got List(PushNumI(25.0), LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -406,8 +465,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="If-then-else-test-2" time="0.002">
-                      <failure message="Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv, LoadEnv(y), PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), LoadEnv(x), PopEnv, LoadEnv(y), PopEnv)
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="If-then-else-test-2" time="0.001">
+                      <failure message="Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), PushNumI(25.0), GeqI, CSkipI(4), StoreEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv), but got List(PushNumI(24.5), LoadEnv(y), StoreEnv(y), LoadEnv(y), PushNumI(45.0), AddI, LoadEnv(x), StoreEnv(x), LoadEnv(x), PushNumI(25.0), GeqI, CSkipI(4), LoadEnv(x), PushNumI(25.5), AddI, SkipI(1), PushNumI(43.0), PopEnv, PopEnv)
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -472,8 +531,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-and-simple-1" time="0.0">
-                      <failure message="Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushNumI(0.0))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushNumI(0.0))
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-and-simple-1" time="0.002">
+                      <failure message="Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, PushBoolI(false))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(0.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(-4.0), GeqI, PushBoolI(false))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -538,8 +597,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-and-simple-2" time="0.0">
-                      <failure message="Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushNumI(0.0))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushNumI(0.0))
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-and-simple-2" time="0.001">
+                      <failure message="Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, PushBoolI(false))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, SkipI(1), PushBoolI(false)), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(4), PushNumI(5.0), PushNumI(0.0), DivI, PushBoolI(false))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -605,7 +664,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
                     </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-and-simple-3" time="0.001">
-                      <failure message="Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushNumI(0.0))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushNumI(0.0))
+                      <failure message="Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, PushBoolI(false))" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, SkipI(1), PushBoolI(false)), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(4), PushNumI(-4.0), PushNumI(5.0), GeqI, PushBoolI(false))
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
 	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
@@ -671,137 +730,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </failure>
                     </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-or-simple-1" time="0.001">
-                      <failure message="Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI), but got List(PushNumI(1.0), PushNumI(5.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(3), PushNumI(5.0), PushNumI(-4.0), GeqI)
-	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
-	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
-	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
-	at org.scalatest.Assertions.assertResult(Assertions.scala:1025)
-	at org.scalatest.Assertions.assertResult$(Assertions.scala:1021)
-	at org.scalatest.FunSuite.assertResult(FunSuite.scala:1560)
-	at edu.colorado.csci3155.project1.CompilerTest.$anonfun$new$15(CompilerTest.scala:274)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
-	at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
-	at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
-	at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
-	at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
-	at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
-	at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
-	at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
-	at org.scalatest.Suite.run(Suite.scala:1124)
-	at org.scalatest.Suite.run$(Suite.scala:1106)
-	at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
-	at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
-	at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
-	at org.scalatest.FunSuite.run(FunSuite.scala:1560)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:147)
-	at sbt.TestRunner.run(TestFramework.scala:162)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:330)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:290)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
-	at sbt.TestFunction.apply(TestFramework.scala:342)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
-	at sbt.Execute.work(Execute.scala:291)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</failure>
-                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-or-not-1" time="0.0">
-                      <failure message="Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushBoolI(true), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI), but got List(PushNumI(5.0), PushNumI(1.0), GeqI, CSkipI(2), PushNumI(1.0), SkipI(5), PushNumI(0.0), PushNumI(0.0), DivI, PushNumI(0.0), GeqI, NotI)
-	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
-	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
-	at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
-	at org.scalatest.Assertions.assertResult(Assertions.scala:1025)
-	at org.scalatest.Assertions.assertResult$(Assertions.scala:1021)
-	at org.scalatest.FunSuite.assertResult(FunSuite.scala:1560)
-	at edu.colorado.csci3155.project1.CompilerTest.$anonfun$new$16(CompilerTest.scala:296)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
-	at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
-	at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
-	at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
-	at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
-	at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
-	at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
-	at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
-	at org.scalatest.Suite.run(Suite.scala:1124)
-	at org.scalatest.Suite.run$(Suite.scala:1106)
-	at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
-	at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
-	at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
-	at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
-	at org.scalatest.FunSuite.run(FunSuite.scala:1560)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:147)
-	at sbt.TestRunner.run(TestFramework.scala:162)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:330)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:290)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:330)
-	at sbt.TestFunction.apply(TestFramework.scala:342)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
-	at sbt.Execute.work(Execute.scala:291)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</failure>
+                      
+                    </testcase><testcase classname="edu.colorado.csci3155.project1.CompilerTest" name="test-or-not-1" time="0.001">
+                      
                     </testcase>
           <system-out><![CDATA[]]></system-out>
           <system-err><![CDATA[]]></system-err>

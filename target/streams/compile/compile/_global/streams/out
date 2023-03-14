@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI 3155/Projects/project1_student/src/main/scala/edu/colorado/csci3155/project1/StackMachineCompiler.scala:38:55: not found: value PushEnv[0m
-[0m[[0m[31merror[0m] [0m[0m                compileToStackMachineCode(e1) ++ List(PushEnv) ++ List(StoreEnv(s)) ++[0m
-[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/devingessner/Library/CloudStorage/Dropbox/CSCI/CSCI 3155/Projects/project1_student/src/main/scala/edu/colorado/csci3155/project1/StackMachineCompiler.scala:20:18: constructor cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : edu.colorado.csci3155.project1.If[0m
+[0m[[0m[31merror[0m] [0m[0m required: edu.colorado.csci3155.project1.Expr[0m
+[0m[[0m[31merror[0m] [0m[0m            case If(cond, thenPart, elsePart) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
